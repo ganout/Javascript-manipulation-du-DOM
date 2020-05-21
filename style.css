@@ -1,13 +1,84 @@
+:root{
+    --user-interface-width: 100%;
+    --user-interface-height: 50px;
+}
 *{
     margin: 0;
     padding: 0;
 }
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .paddle {
     width: 100px;
     height: 10px;
-    margin-top: 500px;
+    margin-bottom: 10px;
+    margin-left: 45%;
     background-color: black;
-    position: relative;
-    left: 600px;
-
+    border-radius: 25px;
+}
+.user-interface{
+    width: var(--user-interface-width);
+    height: var(--user-interface-height);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    background-color: #454545;
+    border-top: 2px solid black;
+}
+.user-interface button{
+    width: 100px;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    box-shadow: 3px 3px 10px #444444;
+    border-radius: 25px;
+}
+.user-interface button:active{
+    background-color: #ffffff;
+    color: #000000;
+}
+.btn-black{
+    background-color: black;
+}
+.btn-black:active{
+    border-color: black;
+}
+.btn-red{
+    background-color: red;
+}
+.btn-red:active{
+    border-color: red;
+}
+.btn-green{
+    background-color: green;
+}
+.btn-green:active{
+    border-color: green;
+}
+.btn-orange{
+    background-color: orange;
+}
+.btn-orange:active{
+    border-color: orange;
+}
+.btn-purple{
+    background-color: purple;
+}
+.btn-purple:active{
+    border-color: purple;
+}
+.btn-blue{
+    background-color: blue;
+}
+.btn-blue:active{
+    border-color: blue;
 }
