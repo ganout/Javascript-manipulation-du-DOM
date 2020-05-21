@@ -2,24 +2,12 @@
     margin: 0;
     padding: 0;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.container{
-    width: 90vw;
-    height: 80vh;
-    border: 2px solid black;
-}
-.mobile-bar{
-    width: 10%;
-    height: 5%;
+.paddle {
+    width: 100px;
+    height: 10px;
+    margin-top: 500px;
     background-color: black;
     position: relative;
-    top: 50vh;
-    left: 90%;
+    left: 600px;
+
 }
